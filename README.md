@@ -10,4 +10,5 @@ to implement in C++.
 * `algorithms`: Implementations of various algorithms.
 * `datastructs`: Implementations of various data structures.
 * `problems`: Solutions for various interview/competition problems.
+* `pynotes`: Notes on some language features, tips and tricks of Python.
 
