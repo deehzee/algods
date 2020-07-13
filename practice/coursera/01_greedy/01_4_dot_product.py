@@ -1,7 +1,5 @@
 #Uses python3
 
-# import sys
-
 
 def max_dot_product(a, b):
     a, b = sorted(a), sorted(b)

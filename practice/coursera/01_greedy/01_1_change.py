@@ -16,3 +16,4 @@ def get_change(m):
 if __name__ == '__main__':
     m = int(input())
     print(get_change(m))
+

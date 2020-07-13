@@ -1,5 +1,4 @@
 # python3
-# import sys
 
 
 def compute_min_refills(distance, tank, stops):
@@ -22,10 +21,9 @@ def compute_min_refills(distance, tank, stops):
 
 
 if __name__ == '__main__':
-    # d, m, _, *stops = map(int, sys.stdin.read().split())
-    # print(compute_min_refills(d, m, stops))
     d = int(input())
     m = int(input())
     n = int(input())
     stops = [int(_) for _ in input().split()]
     print(compute_min_refills(d, m, stops))
+
