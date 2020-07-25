@@ -1,8 +1,9 @@
 # Python Notes
 
-These are notes about some language features, tips and tricks of Python.
-
-## Contents
-
-* Generators and Iterators
+Notes on various topics, including:
+* language features, tips and tricks
+* algorithms
+* data structures
+* anything interesting
+* things for future reference.
 
