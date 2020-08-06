@@ -31,6 +31,29 @@ def trap(heights):
     return water
 
 
+def trap2(heights):
+    '''
+    Example:
+    --------
+    >>> trap2([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])
+    6
+
+    '''
+    left, right = 0, len(heights) - 1
+    lmax = rmax = 0
+    water = 0
+    while left <= right:
+        lmax = max(lmax, heights[left])
+        rmax = max(rmax, heights[right])
+        if lmax <= rmax:
+            water += lmax - heights[left]
+            left += 1
+        else:
+            water += rmax - heights[right]
+            right -= 1
+    return water
+
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
