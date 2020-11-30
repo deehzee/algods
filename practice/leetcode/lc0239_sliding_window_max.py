@@ -56,11 +56,8 @@ Constraints:
 from collections import deque
 
 
-<<<<<<< HEAD
 # Time: O(n)
 # Space: O(k)
-=======
->>>>>>> 5a01a4c1cdaecad2d73e4eac5fc3864c1927682f
 def sliding_window_max(nums, k):
     win = deque()
     acc = []
