@@ -17,6 +17,8 @@ from collections import deque
 DBG = print
 
 
+# Time: O(n)
+# Space: O(k)
 def max_in_sliding_window(arr, width):
     acc = []
     win = deque()
