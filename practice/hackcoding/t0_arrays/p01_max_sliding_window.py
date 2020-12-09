@@ -43,7 +43,7 @@ def max_in_sliding_window(arr, width):
 ## Testing ##
 
 
-def generate_random_input(seed=None, maxlen=20, maxent=30):
+def generate_random_input(maxlen=20, maxent=30):
     n = np.random.randint(0, maxlen)
     arr = np.random.randint(1, maxent + 1, n)
     return arr
@@ -59,11 +59,12 @@ def check(acc, arr, width):
 
 
 def random_tests(seed=None, maxlen=20, maxent=30):
+    np.random.seed = seed
+    n = 0
     try:
-        n = 0
         while True:
             flag = False
-            arr  = generate_random_input(seed, maxlen, maxent)
+            arr  = generate_random_input(maxlen, maxent)
             for width in range(1, len(arr) + 1):
                 n += 1
                 acc = max_in_sliding_window(arr, width)
@@ -82,5 +83,5 @@ def random_tests(seed=None, maxlen=20, maxent=30):
 if __name__ == '__main__':
     print('Performing random tests...')
     print('Press ^C to stop.')
-    random_tests(42, 100, 150)
+    random_tests(seed=42, maxlen=100, maxent=150)
 

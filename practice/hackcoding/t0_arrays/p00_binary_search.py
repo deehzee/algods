@@ -42,10 +42,10 @@ def random_tests(seed=None, maxlen=10, maxent=20):
     n = 0
     try:
         while True:
-            n += 1
             flag = False
             arr = generate_random_sorted_array(maxlen, maxent)
             for key in range(0, maxent + 1):
+                n += 1
                 i = binary_search(arr, key)
                 if ((-1 < i < len(arr) and arr[i] != key) or (i == -1 and key in arr)):
                     print(f'Test #{n}')
