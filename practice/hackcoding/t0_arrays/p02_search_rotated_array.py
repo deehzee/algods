@@ -19,6 +19,9 @@ import numpy as np
 def search_rotated_array(arr, key):
     """Search for a key in a rotated sorted array arr.
     Assumption: Elements of arr are unique.
+
+    Time:  O(log n)
+    Space: O(1)
     """
     lo, hi = 0, len(arr)
     while lo < hi:
